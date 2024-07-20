@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		954EA3782C4B4EE00065D51A /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954EA3772C4B4EE00065D51A /* DetailView.swift */; };
+		954EA37A2C4BFDE50065D51A /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954EA3792C4BFDE50065D51A /* SettingView.swift */; };
 		95FBB94B2C48A21B0049F14F /* demoReader2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FBB94A2C48A21B0049F14F /* demoReader2App.swift */; };
 		95FBB94D2C48A21B0049F14F /* MasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FBB94C2C48A21B0049F14F /* MasterView.swift */; };
 		95FBB94F2C48A21B0049F14F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95FBB94E2C48A21B0049F14F /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		954EA3772C4B4EE00065D51A /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		954EA3792C4BFDE50065D51A /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		95FBB9472C48A21B0049F14F /* demoReader2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demoReader2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95FBB94A2C48A21B0049F14F /* demoReader2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demoReader2App.swift; sourceTree = "<group>"; };
 		95FBB94C2C48A21B0049F14F /* MasterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterView.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				95FBB94C2C48A21B0049F14F /* MasterView.swift */,
 				95FBB9752C48A2BD0049F14F /* RowView.swift */,
 				954EA3772C4B4EE00065D51A /* DetailView.swift */,
+				954EA3792C4BFDE50065D51A /* SettingView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				95FBB94D2C48A21B0049F14F /* MasterView.swift in Sources */,
 				95FBB9792C48A54D0049F14F /* Data.swift in Sources */,
 				95FBB9762C48A2BD0049F14F /* RowView.swift in Sources */,
+				954EA37A2C4BFDE50065D51A /* SettingView.swift in Sources */,
 				954EA3782C4B4EE00065D51A /* DetailView.swift in Sources */,
 				95FBB94B2C48A21B0049F14F /* demoReader2App.swift in Sources */,
 			);

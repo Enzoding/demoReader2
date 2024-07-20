@@ -13,15 +13,16 @@ struct DetailView: View {
     var body: some View {
         ScrollView{
             VStack(alignment: .leading) {
-                Text(article.title)
-                    .font(.title3)
-                    .bold()
-                    .padding(.bottom, 2)
-                    .padding(.horizontal)
+//                Text(article.title)
+//                    .font(.title3)
+//                    .bold()
+//                    .padding(.bottom, 2)
+//                    .padding(.horizontal)
                 Text(article.body)
                     .padding(.horizontal)
             }
         }
+        .navigationTitle(article.title)
     }
 }
 
