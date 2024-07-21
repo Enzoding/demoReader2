@@ -25,10 +25,23 @@ class Data: ObservableObject {
             return
         }
         // 省略了报错，而选择强行拆包；
-        URLSession.shared.dataTask(with: url) {
-            (data, response, error) in
+        URLSession.shared.dataTask(with: url) { (data, response, error) in
             DispatchQueue.main.async {
-                self.articles = try! JSONDecoder().decode([Article].self, from: data!)
+                if let error = error {
+                    print("Error fetching data: \(error.localizedDescription)")
+                    return
+                }
+                
+                guard let data = data else {
+                    print("No data returned")
+                    return
+                }
+                
+                do {
+                    self.articles = try JSONDecoder().decode([Article].self, from: data)
+                } catch {
+                    print("Error decoding JSON: \(error.localizedDescription)")
+                }
             }
         }.resume()
     }

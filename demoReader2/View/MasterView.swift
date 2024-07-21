@@ -26,6 +26,7 @@ struct MasterView: View {
                 SettingView(darkMode: $darkMode)
             }
         }
+        // 主视图及子视图都会共用这个颜色方案
         .preferredColorScheme(darkMode ? .dark : .light)
         
     }

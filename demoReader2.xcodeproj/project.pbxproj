@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		954EA3782C4B4EE00065D51A /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954EA3772C4B4EE00065D51A /* DetailView.swift */; };
 		954EA37A2C4BFDE50065D51A /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954EA3792C4BFDE50065D51A /* SettingView.swift */; };
+		95647F5B2C4CF34400DE5696 /* ReadingNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95647F5A2C4CF34400DE5696 /* ReadingNoteView.swift */; };
+		95647F5D2C4CF55000DE5696 /* RoundButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95647F5C2C4CF55000DE5696 /* RoundButtonView.swift */; };
+		95647F602C4CF8F800DE5696 /* BetterSafariView in Frameworks */ = {isa = PBXBuildFile; productRef = 95647F5F2C4CF8F800DE5696 /* BetterSafariView */; };
+		95C1E4622C4CB56300BCE577 /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C1E4612C4CB56300BCE577 /* MotionManager.swift */; };
 		95FBB94B2C48A21B0049F14F /* demoReader2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FBB94A2C48A21B0049F14F /* demoReader2App.swift */; };
 		95FBB94D2C48A21B0049F14F /* MasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FBB94C2C48A21B0049F14F /* MasterView.swift */; };
 		95FBB94F2C48A21B0049F14F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95FBB94E2C48A21B0049F14F /* Assets.xcassets */; };
@@ -40,6 +44,9 @@
 /* Begin PBXFileReference section */
 		954EA3772C4B4EE00065D51A /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		954EA3792C4BFDE50065D51A /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		95647F5A2C4CF34400DE5696 /* ReadingNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingNoteView.swift; sourceTree = "<group>"; };
+		95647F5C2C4CF55000DE5696 /* RoundButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButtonView.swift; sourceTree = "<group>"; };
+		95C1E4612C4CB56300BCE577 /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
 		95FBB9472C48A21B0049F14F /* demoReader2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demoReader2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95FBB94A2C48A21B0049F14F /* demoReader2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demoReader2App.swift; sourceTree = "<group>"; };
 		95FBB94C2C48A21B0049F14F /* MasterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterView.swift; sourceTree = "<group>"; };
@@ -60,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95647F602C4CF8F800DE5696 /* BetterSafariView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +95,8 @@
 				95FBB9752C48A2BD0049F14F /* RowView.swift */,
 				954EA3772C4B4EE00065D51A /* DetailView.swift */,
 				954EA3792C4BFDE50065D51A /* SettingView.swift */,
+				95647F5A2C4CF34400DE5696 /* ReadingNoteView.swift */,
+				95647F5C2C4CF55000DE5696 /* RoundButtonView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -94,7 +104,6 @@
 		95FBB93E2C48A21B0049F14F = {
 			isa = PBXGroup;
 			children = (
-				95FBB9772C48A53D0049F14F /* Model */,
 				95FBB9492C48A21B0049F14F /* demoReader2 */,
 				95FBB95B2C48A21B0049F14F /* demoReader2Tests */,
 				95FBB9652C48A21B0049F14F /* demoReader2UITests */,
@@ -115,6 +124,7 @@
 		95FBB9492C48A21B0049F14F /* demoReader2 */ = {
 			isa = PBXGroup;
 			children = (
+				95FBB9772C48A53D0049F14F /* Model */,
 				954EA3762C4B4EB90065D51A /* View */,
 				95FBB94A2C48A21B0049F14F /* demoReader2App.swift */,
 				95FBB94E2C48A21B0049F14F /* Assets.xcassets */,
@@ -153,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				95FBB9782C48A54D0049F14F /* Data.swift */,
+				95C1E4612C4CB56300BCE577 /* MotionManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -173,6 +184,9 @@
 			dependencies = (
 			);
 			name = demoReader2;
+			packageProductDependencies = (
+				95647F5F2C4CF8F800DE5696 /* BetterSafariView */,
+			);
 			productName = demoReader2;
 			productReference = 95FBB9472C48A21B0049F14F /* demoReader2.app */;
 			productType = "com.apple.product-type.application";
@@ -245,6 +259,9 @@
 				Base,
 			);
 			mainGroup = 95FBB93E2C48A21B0049F14F;
+			packageReferences = (
+				95647F5E2C4CF8F800DE5696 /* XCRemoteSwiftPackageReference "BetterSafariView" */,
+			);
 			productRefGroup = 95FBB9482C48A21B0049F14F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -288,10 +305,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				95FBB94D2C48A21B0049F14F /* MasterView.swift in Sources */,
+				95C1E4622C4CB56300BCE577 /* MotionManager.swift in Sources */,
 				95FBB9792C48A54D0049F14F /* Data.swift in Sources */,
+				95647F5B2C4CF34400DE5696 /* ReadingNoteView.swift in Sources */,
 				95FBB9762C48A2BD0049F14F /* RowView.swift in Sources */,
 				954EA37A2C4BFDE50065D51A /* SettingView.swift in Sources */,
 				954EA3782C4B4EE00065D51A /* DetailView.swift in Sources */,
+				95647F5D2C4CF55000DE5696 /* RoundButtonView.swift in Sources */,
 				95FBB94B2C48A21B0049F14F /* demoReader2App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,6 +401,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -436,6 +457,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -474,7 +496,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = top.peaceding.demoReader2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -512,7 +535,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = top.peaceding.demoReader2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -649,6 +673,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		95647F5E2C4CF8F800DE5696 /* XCRemoteSwiftPackageReference "BetterSafariView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stleamist/BetterSafariView.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		95647F5F2C4CF8F800DE5696 /* BetterSafariView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 95647F5E2C4CF8F800DE5696 /* XCRemoteSwiftPackageReference "BetterSafariView" */;
+			productName = BetterSafariView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 95FBB93F2C48A21B0049F14F /* Project object */;
 }

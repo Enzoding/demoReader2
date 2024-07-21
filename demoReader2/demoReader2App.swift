@@ -9,9 +9,20 @@ import SwiftUI
 
 @main
 struct demoReader2App: App {
+    // let motionManager = MotionManager()
+    
     var body: some Scene {
         WindowGroup {
-            MasterView()
+            TabView{
+                MasterView()
+                    .tabItem {
+                        Label("阅读列表", systemImage: "books.vertical")
+                    }
+                ReadingNoteView()
+                    .tabItem {
+                        Label("笔记", systemImage: "note.text")
+                    }
+            }
         }
     }
 }

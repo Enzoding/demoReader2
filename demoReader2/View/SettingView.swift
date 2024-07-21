@@ -20,5 +20,6 @@ struct SettingView: View {
 }
 
 #Preview {
+    // 恒定为假的绑定变量用于测试
     SettingView(darkMode: .constant(false))
 }
