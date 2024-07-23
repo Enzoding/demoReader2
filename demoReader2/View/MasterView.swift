@@ -10,7 +10,7 @@ import SwiftUI
 // MARK: -View
 struct MasterView: View {
     // 新增状态对象，初始化Data并让SwiftUI来管理存储
-    @StateObject var data = Data()
+    @StateObject var data = TabReadingData()
     @AppStorage("darkMode") var darkMode = false
     
     var body: some View {

@@ -16,7 +16,7 @@ struct Article: Codable, Identifiable {
 
 // MARK: -ViewModel
 // 传递给文章视图的是一个list，需要额外定义一个数组，这个新定义的类负责给其他视图来提供数据，在数据变更时通知其他视图更新；
-class Data: ObservableObject {
+class TabReadingData: ObservableObject {
     @Published var articles = [Article]()
     
     init(){
