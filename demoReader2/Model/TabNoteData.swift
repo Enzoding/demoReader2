@@ -26,11 +26,20 @@ class TabNoteData: ObservableObject{
     
     func getNotes() -> [Note] {
         var result: [Note] = []
+        // 判断是否有文件可供读取
+        if FileManager.default.fileExists(atPath: notesURL.path) {
+            let data = try! Data(contentsOf: notesURL)
+            result = try! JSONDecoder().decode([Note].self, from: data)
+        }
         
         return result
     }
     
     func saveNotes() {
-        
+        // 使用GCD分配，将任务放在后台执行，
+        DispatchQueue.global(qos: .userInitiated).async {
+            let data = try? JSONEncoder().encode(self.notes)
+            try? data?.write(to: self.notesURL)
+        }
     }
 }

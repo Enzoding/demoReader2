@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		950F11B82C4FE72A000CCB4B /* NoteEntryAndList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950F11B72C4FE72A000CCB4B /* NoteEntryAndList.swift */; };
 		954EA3782C4B4EE00065D51A /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954EA3772C4B4EE00065D51A /* DetailView.swift */; };
 		954EA37A2C4BFDE50065D51A /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954EA3792C4BFDE50065D51A /* SettingView.swift */; };
 		95647F5B2C4CF34400DE5696 /* ReadingNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95647F5A2C4CF34400DE5696 /* ReadingNoteView.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		950F11B72C4FE72A000CCB4B /* NoteEntryAndList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteEntryAndList.swift; sourceTree = "<group>"; };
 		954EA3772C4B4EE00065D51A /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		954EA3792C4BFDE50065D51A /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		95647F5A2C4CF34400DE5696 /* ReadingNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingNoteView.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				954EA3792C4BFDE50065D51A /* SettingView.swift */,
 				95647F5A2C4CF34400DE5696 /* ReadingNoteView.swift */,
 				95647F5C2C4CF55000DE5696 /* RoundButtonView.swift */,
+				950F11B72C4FE72A000CCB4B /* NoteEntryAndList.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				950F11B82C4FE72A000CCB4B /* NoteEntryAndList.swift in Sources */,
 				95FBB94D2C48A21B0049F14F /* MasterView.swift in Sources */,
 				95C1E4622C4CB56300BCE577 /* MotionManager.swift in Sources */,
 				95FBB9792C48A54D0049F14F /* TabReadingData.swift in Sources */,

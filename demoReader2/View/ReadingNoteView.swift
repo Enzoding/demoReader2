@@ -37,6 +37,8 @@ struct ReadingNoteView: View {
                     }
                 }
                 
+                Spacer()
+                
             }
             .navigationTitle("笔记")
         }
