@@ -6,12 +6,14 @@
 //
 
 import Foundation
+import SwiftUI
 
 // 表示一条笔记的结构
 struct Note: Codable, Identifiable {
     var id: UUID
     var title: String
     var content: String
+    var imageURLAppendix: String?
 }
 
 // 用来存多条笔记
@@ -23,6 +25,22 @@ class TabNoteData: ObservableObject{
     init() {
         notes = getNotes()
     }
+    
+    func getImage(_ imageURLAppendix: String) -> UIImage {
+        let url = TabNoteData.sandBoxURL.appendingPathComponent(imageURLAppendix)
+        let imageData = try! Data(contentsOf: url)
+        return UIImage(data: imageData, scale: 0.5)!
+    }
+    
+    func saveImage(id: UUID, data: Data) {
+        // 存储耗时，放入后台线程
+        DispatchQueue.global(qos: .userInitiated).async {
+            let url = TabNoteData.sandBoxURL.appendingPathComponent("\(id).png")
+            try? data.write(to: url)
+            
+        }
+    }
+    
     
     func getNotes() -> [Note] {
         var result: [Note] = []
