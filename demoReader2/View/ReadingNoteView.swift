@@ -13,7 +13,7 @@ struct ReadingNoteView: View {
     
     var body: some View {
         NavigationView{
-            ScrollView{
+            VStack{
                 HStack {
                     Link(destination: URL(string: "https://peaceding.top/")!) {
                         RoundButtonView(text: "在Safari打开", image: "safari")
@@ -36,9 +36,8 @@ struct ReadingNoteView: View {
                         .dismissButtonStyle(.close)
                     }
                 }
-                
+                NoteEntryAndList()
                 Spacer()
-                
             }
             .navigationTitle("笔记")
         }

@@ -35,15 +35,32 @@ struct NoteEntryAndList: View {
                 }
             }
             .padding()
-            .background(Color.white)
+            .background(Color.gray.gradient)
             .cornerRadius(10)
             .shadow(radius: 3)
             .padding()
-            // 读取笔记
+            // 读取现有笔记
+            List {
+                ForEach(noteData.notes) { note in
+                    VStack(alignment:.leading,spacing: 10){
+                        Text(note.title)
+                            .font(.title3)
+                            .bold()
+                        Text(note.content)
+                    }
+                }
+                .onDelete(perform: deletae)
+            }
+            .listStyle(InsetGroupedListStyle())
         }
+    }
+    func deletae(offsets: IndexSet) {
+        noteData.notes.remove(atOffsets: offsets)
+        noteData.saveNotes()
     }
 }
 
 #Preview {
     NoteEntryAndList()
 }
+
