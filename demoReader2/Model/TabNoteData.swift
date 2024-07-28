@@ -29,9 +29,21 @@ class TabNoteData: ObservableObject{
     func getImage(_ imageURLAppendix: String) -> UIImage {
         let url = TabNoteData.sandBoxURL.appendingPathComponent(imageURLAppendix)
         let imageData = try! Data(contentsOf: url)
-        return UIImage(data: imageData, scale: 0.5)!
+        return UIImage(data: imageData, scale: 1.0)!
     }
     
+//    func getImage(_ imageURLAppendix: String) -> UIImage? {
+//        let url = TabNoteData.sandBoxURL.appendingPathComponent(imageURLAppendix)
+//        do {
+//            let imageData = try Data(contentsOf: url)
+//            return UIImage(data: imageData, scale: 0.0)
+//        } catch {
+//            print("Error loading image data: \(error)")
+//            return nil
+//        }
+//    }
+    
+    // 存储图片的函数
     func saveImage(id: UUID, data: Data) {
         // 存储耗时，放入后台线程
         DispatchQueue.global(qos: .userInitiated).async {

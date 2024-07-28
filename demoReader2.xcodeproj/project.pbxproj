@@ -15,6 +15,7 @@
 		95647F602C4CF8F800DE5696 /* BetterSafariView in Frameworks */ = {isa = PBXBuildFile; productRef = 95647F5F2C4CF8F800DE5696 /* BetterSafariView */; };
 		95C1E4622C4CB56300BCE577 /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C1E4612C4CB56300BCE577 /* MotionManager.swift */; };
 		95D2C38C2C4DE215003AB5E7 /* TabNoteData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D2C38B2C4DE215003AB5E7 /* TabNoteData.swift */; };
+		95E1222C2C54DEC100960285 /* ImagePickerView in Frameworks */ = {isa = PBXBuildFile; productRef = 95E1222B2C54DEC100960285 /* ImagePickerView */; };
 		95FBB94B2C48A21B0049F14F /* demoReader2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FBB94A2C48A21B0049F14F /* demoReader2App.swift */; };
 		95FBB94D2C48A21B0049F14F /* MasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FBB94C2C48A21B0049F14F /* MasterView.swift */; };
 		95FBB94F2C48A21B0049F14F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95FBB94E2C48A21B0049F14F /* Assets.xcassets */; };
@@ -72,6 +73,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				95647F602C4CF8F800DE5696 /* BetterSafariView in Frameworks */,
+				95E1222C2C54DEC100960285 /* ImagePickerView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +194,7 @@
 			name = demoReader2;
 			packageProductDependencies = (
 				95647F5F2C4CF8F800DE5696 /* BetterSafariView */,
+				95E1222B2C54DEC100960285 /* ImagePickerView */,
 			);
 			productName = demoReader2;
 			productReference = 95FBB9472C48A21B0049F14F /* demoReader2.app */;
@@ -267,6 +270,7 @@
 			mainGroup = 95FBB93E2C48A21B0049F14F;
 			packageReferences = (
 				95647F5E2C4CF8F800DE5696 /* XCRemoteSwiftPackageReference "BetterSafariView" */,
+				95E1222A2C54DEC100960285 /* XCRemoteSwiftPackageReference "ImagePickerView" */,
 			);
 			productRefGroup = 95FBB9482C48A21B0049F14F /* Products */;
 			projectDirPath = "";
@@ -691,6 +695,14 @@
 				kind = branch;
 			};
 		};
+		95E1222A2C54DEC100960285 /* XCRemoteSwiftPackageReference "ImagePickerView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ralfebert/ImagePickerView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -698,6 +710,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 95647F5E2C4CF8F800DE5696 /* XCRemoteSwiftPackageReference "BetterSafariView" */;
 			productName = BetterSafariView;
+		};
+		95E1222B2C54DEC100960285 /* ImagePickerView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 95E1222A2C54DEC100960285 /* XCRemoteSwiftPackageReference "ImagePickerView" */;
+			productName = ImagePickerView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
